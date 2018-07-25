@@ -1,0 +1,48 @@
+<!-- public/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <title>Countdown</title>
+
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="angular-bootstrap-datetimepicker/src/css/datetimepicker.css"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold">
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <!-- JS -->
+    <script type="text/javascript" src="libs/angular/angular.js"></script>
+    <script src="libs/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/moment/moment.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="angular-bootstrap-datetimepicker/src/js/datetimepicker.js"></script>
+    <script type="text/javascript" src="angular-bootstrap-datetimepicker/src/js/datetimepicker.templates.js"></script>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+
+    <!-- ANGULAR CUSTOM -->
+    <script src="js/controllers/MainCtrl.js"></script>
+    <script src="js/controllers/IndexCtrl.js"></script>
+    <script src="js/services/CountdownService.js"></script>
+    <script src="js/appRoutes.js"></script>
+    <script src="js/app.js"></script>
+ 
+
+</head>
+
+<body id="home" ng-app="sampleApp" ng-controller="IndexController" ng-style="{'background': 'url(' + dynamicBackground + ')'}">
+
+    <!-- ANGULAR DYNAMIC CONTENT -->
+    <div ng-view></div>
+    </div>
+
+    <div id="overlay"></div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "starter-node-angular",
+  "main": "server.js",
+  "dependencies": {
+    "angular-bootstrap-datetimepicker": "^1.0.1",
+    "bluebird": "^3.5.1",
+    "body-parser": "~1.4.2",
+    "bower": "latest",
+    "express": "~4.5.1",
+    "method-override": "~2.0.2",
+    "mongoose": "^4.11.11"
+  },
+  "scripts": {
+    "start": "node --inspect server.js",
+    "postinstall": "bower install"
+  }
+}
